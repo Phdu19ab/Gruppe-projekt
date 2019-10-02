@@ -12,7 +12,7 @@ Vi har i vores gruppe valgt, at udforme et funktionelt bookingsystem. Vores book
 
 Vores projekt udformes som et bord booking system for Cafe Bomhuset. Systemet gør det muligt for brugeren at booke, annullere samt overvære forhenværende såvel som fremtidige bookinger. Systemet kræver at man først opretter sig som bruger, og man vil derfor på startsiden have at oprette sig som ny bruger, eller hvis allerede oprettet kunne logge sig ind. Når brugeren er logget ind, vil det være muligt for brugeren at indtaste antal personer, dato og tidspunkt. På baggrund af disse informationer vil brugeren blive henvist til en ny side. På denne side vil brugeren kunne se restaurantens borde samt deres visuelle placering. Man kan dernæst se hvilke borde der er ledige den pågældende dag via farver, og udfra det kunne booke det bord man nu måtte ønske, dette er dog ikke et krav. Brugeren kan vælge at restauranten selv udvælger bord pladsen. Sidst vil brugeren blive bedt om, at vælge modtagelse af bookingbekræftelse via enten mail eller telefonnummer, hvorefter det vil være muligt enten at bekræfte, eller annullere den pågældende booking. Bookingen vil ved bekræftelse efterfølgende kunne ses i brugerens booking historik, og det vil herinde også være muligt at annullere bookingen hvis det skulle ønskes.        
 
-#### Kravspecifikation
+### Kravspecifikation
 
 Aktører: 
 
