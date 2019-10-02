@@ -1,6 +1,6 @@
 # Gruppe-projekt
 
-__Studiegruppe-9 Første aflevering
+Studiegruppe 9 
 
 ## Bookingsystem - Cafe Bomhuset
 
