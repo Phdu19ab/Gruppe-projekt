@@ -55,7 +55,7 @@ Sketches af skærmbilleder:
 
 Alle objekter og funktionaliteter i punktform
 
-Brugeren
+- Brugeren
 
 Navn 
 
@@ -69,20 +69,14 @@ Evt. login via Facebook
 
 Opret
 
-Login
-
+-Login
 Email
-
 Kodeord
-
 Login
 
-Overblik over borde - optagede, ledige og dit valg
-
+-Overblik over borde - optagede, ledige og dit valg
 Valg af bord som ønskes booket
-
 Booking 
-
 
 Valg af dato
 
