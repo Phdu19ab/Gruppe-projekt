@@ -16,6 +16,7 @@ Brugeren (Gæsten)
 
 Administrator 
 - Brugeren
+
 Skal kunne oprette sig som bruger via email, tlf, navn, kodeord. 
 
 Skal fremover kunne logge ind via email og kodeord.
