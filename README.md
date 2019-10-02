@@ -1,6 +1,7 @@
 # Gruppe-projekt
 Studiegruppe-9 Første aflevering
 Bookingsystem - Cafe Bomhuset
+
 Indledning
 Vi har i vores gruppe valgt, at udforme et funktionelt bookingsystem. Vores bookingsystem vil udelukkende være tilgængeligt for Café Bomhuset. Vores booking system vil derfor ikke tilpasse sig andre restauranter/caféer, som de fleste andre eksisterende bookingsystemer gør. Vi valgte at ville programmere et bookingsystem, på baggrund af kompleksiteten samt de mange features der kan tilkobles til dette program. Formålet med netop dette booking system er primært, at det skal gøres nemt og simpelt for brugeren, at få booket et bord på restauranten. Valget blev altså et bord booking system gennem en fælles beslutning mellem gruppemedlemmerne.
 
