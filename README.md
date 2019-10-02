@@ -45,5 +45,5 @@ Skal kunne kontakte/kommunikere med brugeren vedrørende bookinger.
 
 Sketches af skærmbilleder:
 
-![Screenshot](.png)
+![Screenshot](Billede1.png)
 
