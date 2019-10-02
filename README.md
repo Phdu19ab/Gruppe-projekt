@@ -125,7 +125,7 @@ Rediger eller/og besvarelse
 
 Klassediagram
 
-![Screenshot](Billede.png)
+![Screenshot](Skærmbillede 2019-09-20 kl. 14.45.09.png)
 
 
 
