@@ -11,6 +11,7 @@ Vores projekt udformes som et bord booking system for Cafe Bomhuset. Systemet g�
 Kravspecifikation
 Aktører: 
 Brugeren (Gæsten) 
+
 Administrator 
 - Brugeren
 Skal kunne oprette sig som bruger via email, tlf, navn, kodeord. 
