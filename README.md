@@ -2,7 +2,7 @@
 
 Studiegruppe-9 Første aflevering
 
-##Bookingsystem - Cafe Bomhuset
+## Bookingsystem - Cafe Bomhuset
 
 **Indledning**
 
