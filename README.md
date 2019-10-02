@@ -69,14 +69,19 @@ Evt. login via Facebook
 
 Opret
 
--Login
+- Login
+
 Email
+
 Kodeord
+
 Login
 
--Overblik over borde - optagede, ledige og dit valg
+- Overblik over borde - optagede, ledige og dit valg
+
 Valg af bord som ønskes booket
-Booking 
+
+- Booking 
 
 Valg af dato
 
@@ -86,7 +91,7 @@ Tidsinterval - bookingen strækker sig over 2 timer
 
 Bekræft eller annuller
 
-Afbestilling
+- Afbestilling
 
 Bookingoversigt
 
@@ -94,17 +99,17 @@ Valg af booking
 
 Bekræft eller annuller
 
-Bestillingshistorik
+- Bestillingshistorik
 
 Oversigt over forrige og fremtidige bookinger
 
-Booking bekræftelse 
+- Booking bekræftelse 
 
 Bekræftelse via email
 
 Bekræftelse via SMS
 
-Restaurant
+- Restaurant
 
 Navn
 
@@ -112,7 +117,7 @@ Adresse
 
 Ledigt eller optaget
 
-Administrativ bruger
+- Administrativ bruger
 
 Oversigt over bookinger
 
