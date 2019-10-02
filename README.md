@@ -47,3 +47,82 @@ Sketches af skærmbilleder:
 
 ![Screenshot](Billede1.png)
 
+![Screenshot](Billede2.png)
+
+![Screenshot](Billede3.png)
+
+![Screenshot](Billede4.png)
+
+Alle objekter og funktionaliteter i punktform
+
+Brugeren
+
+Navn 
+
+Email
+
+Telefonnummer
+
+Kodeord
+
+Evt. login via Facebook
+
+Opret
+
+Login
+
+Email
+
+Kodeord
+
+Login
+
+Overblik over borde - optagede, ledige og dit valg
+
+Valg af bord som ønskes booket
+
+Booking 
+
+
+Valg af dato
+
+Valg af tidspunkt
+
+Tidsinterval - bookingen strækker sig over 2 timer
+
+Bekræft eller annuller
+
+Afbestilling
+
+Bookingoversigt
+
+Valg af booking
+
+Bekræft eller annuller
+
+Bestillingshistorik
+
+Oversigt over forrige og fremtidige bookinger
+
+Booking bekræftelse 
+
+Bekræftelse via email
+
+Bekræftelse via SMS
+
+Restaurant
+
+Navn
+
+Adresse
+
+Ledigt eller optaget
+
+Administrativ bruger
+
+Oversigt over bookinger
+
+Rediger eller/og besvarelse
+
+
+
