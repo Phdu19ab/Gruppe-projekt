@@ -125,7 +125,7 @@ Rediger eller/og besvarelse
 
 Klassediagram
 
-![Screenshot](Billede5.png)
+![Screenshot](Billede.png)
 
 
 
