@@ -50,13 +50,13 @@ Skal kunne kontakte/kommunikere med brugeren vedrørende bookinger.
 
 ### Sketches af skærmbilleder:
 
-![Screenshot](Billede1.png)
+![Screenshot](Billeder/Billede1.png)
 
-![Screenshot](Billede2.png)
+![Screenshot](Billeder/Billede2.png)
 
-![Screenshot](Billede3.png)
+![Screenshot](Billeder/Billede3.png)
 
-![Screenshot](Billede4.png)
+![Screenshot](Billeder/Billede4.png)
 
 ### Alle objekter og funktionaliteter i punktform
 
@@ -130,7 +130,7 @@ Skal kunne kontakte/kommunikere med brugeren vedrørende bookinger.
 
 ### Klassediagram
 
-![Screenshot](Billede10.png)
+![Screenshot](Billeder/Billede10.png)
 
 
 
