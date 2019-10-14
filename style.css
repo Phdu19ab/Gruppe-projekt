@@ -24,5 +24,12 @@ p1 {
     text-align: center;
     margin: auto;
     font-size: 100%;
-    
+}
+
+#opret_bruger{
+    font-size: 200%;
+}
+
+#log_ind{
+    font-size: 200%;
 }
