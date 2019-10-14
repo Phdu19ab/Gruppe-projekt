@@ -7,5 +7,11 @@ background-image: url("bomhuset1.jpg");
 
 h1 {
     color: black;
-    font-family: "MS PMincho"
+    font-family: "MS PMincho";
+    text-align: center;
+}
+
+#tekst {
+    text-align: center;
+    
 }
