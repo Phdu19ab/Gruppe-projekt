@@ -10,6 +10,15 @@ h1 {
     font-family: "MS PMincho";
     text-align: center;
 }
+p {
+    font-size: 150%;
+    font-family: Verdana;
+}
+
+p1 {
+    font-size: 200%;
+    font-family: Verdana;
+}
 
 #tekst {
     text-align: center;
