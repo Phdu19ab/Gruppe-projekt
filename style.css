@@ -1,0 +1,41 @@
+body {
+background-image: url("bomhuset1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: black;
+    font-family: "MS PMincho";
+    text-align: center;
+}
+p {
+    font-size: 150%;
+    font-family: Verdana;
+}
+
+p1 {
+    font-size: 200%;
+    font-family: Verdana;
+}
+
+#tekst {
+    text-align: center;
+    margin: auto;
+    font-size: 100%;
+}
+
+#opret_bruger{
+    font-size: 100%;
+}
+
+#log_ind{
+    font-size: 100%;
+}
+#e-mail{
+    font-size: 100%;
+}
+#kodeord{
+    font-size: 100%;
+}

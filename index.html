@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <h1>hei igjen igen</h1>
+   <link type="text/css" rel="stylesheet" href="style.css">
+    <title>CAFE BOMHUSET BORDKOOKING</title>
+
 </head>
 <body>
+<h1>CAFE BOMHUSET BORDBOOKING</h1>
+<div id="tekst">
+    <form name="Login">
+    <p>E-mail</p>
+    <input type="text" id="e-mail" value="" placeholder="E-mail"/>
+    <br/>
+    <br/>
+    <p>Kodeord</p>
+    <input type="text" id="kodeord" value="" placeholder="Kodeord"/>
+    <br/>
+    <br/>
+    <button type="submit" id="log_ind" onclick="validateContactInformation()" method="POST" style="cursor: pointer;">Log ind</button>
+    <br/>
+    <br/>
+    <p1>Har du ikke allerede en bruger?</p1>
+    <br/>
+    <br/>
+    <button type="submit" id="opret_bruger" onclick="validateContactInformation()" method="POST" style="cursor: pointer;">Opret Bruger</button>
+</form>
+</div>
 
 </body>
 </html>
