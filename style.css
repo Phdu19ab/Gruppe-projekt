@@ -27,9 +27,15 @@ p1 {
 }
 
 #opret_bruger{
-    font-size: 200%;
+    font-size: 100%;
 }
 
 #log_ind{
-    font-size: 200%;
+    font-size: 100%;
+}
+#e-mail{
+    font-size: 100%;
+}
+#kodeord{
+    font-size: 100%;
 }
