@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta charset="utf-8" />
 
 <head>
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -9,6 +9,21 @@
 </head>
 <body>
 <h1>CAFE BOMHUSET BORDBOOKING</h1>
+<h2>OPRET BRUGER</h2>
 
+<div id="opret">
+    <form name="opret">
+        <p>E-mail</p>
+        <input type="text" id="e-mail" value="" placeholder="E-mail"/>
+        <br/>
+        <br/>
+        <p>Kodeord</p>
+        <input type="text" id="kodeord" value="" placeholder="Kodeord"/>
+        <br>
+        <p>Bekræft Kodeord</p>
+        <input type="text" id="bekræft_kodeord" value="" placeholder="Bekræft Kodeord"/>
+        <br/>
+        <br/>
+        <button type="submit" id="opret_bruger" onclick="validateContactInformation()">Opret Bruger</button>
 </body>
 </html>

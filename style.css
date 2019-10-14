@@ -10,6 +10,12 @@ h1 {
     font-family: "MS PMincho";
     text-align: center;
 }
+
+h2 {
+    color: black;
+    font-family: "MS PMincho";
+    text-align: center;
+}
 p {
     font-size: 150%;
     font-family: Verdana;
@@ -37,5 +43,11 @@ p1 {
     font-size: 100%;
 }
 #kodeord{
+    font-size: 100%;
+}
+
+#opret {
+    text-align: center;
+    margin: auto;
     font-size: 100%;
 }
