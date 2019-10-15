@@ -2,6 +2,8 @@ body {
     background-image: url("../Billeder/Bomhuset2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    text-align: center;
 }
 
 font-family: {
