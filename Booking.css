@@ -1,0 +1,23 @@
+<style>
+{font-family: Times New Roman, sans-serif;}
+
+#annuller {
+    background-color: #0c0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#bekræft {
+    background-color: #32a7fa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+</style>
