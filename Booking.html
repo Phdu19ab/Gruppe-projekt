@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link type="text/css" rel="stylesheet" href="Booking.css">
+    <link type="text/css" rel="stylesheet" href="Booking.js">
     <meta charset="UTF-8">
     <title>Booking</title>
 </head>
 <style>
     {font-family: Times New Roman, sans-serif;}
 
+    #annuller {
+        background-color: #0c0d0d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    #bekræft {
+        background-color: #32a7fa;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
 </style>
 <body>
+<h1>Booking Café Bomhuset</h1>
+<br/>
+<br/>
 <form name="Booking">
     Antal Personer
     <br/>
@@ -116,6 +140,12 @@
     <option value="22">20:30</option>
     <option value="23">21:00</option>
     </select>
+
+    <br/>
+    <br/>
+    <button onclick="document.getElementById('id01').style.display='block'" id="bekræft" style="width:auto;">Bekræft</button>
+
+    <button onclick="document.getElementById('id01').style.display='block'" id="annuller" style="width:auto;">Annuller</button>
 
 
 </form>
