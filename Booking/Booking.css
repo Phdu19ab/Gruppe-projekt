@@ -1,5 +1,22 @@
-<style>
-{font-family: Times New Roman, sans-serif;}
+body {
+    background-image: url("../Billeder/Bomhuset2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+font-family: {
+    Times New Roman, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+p1, p2, p3 {
+    color: white;
+}
+
+
 
 #annuller {
     background-color: #0c0d0d;
@@ -19,5 +36,3 @@
     cursor: pointer;
     width: 100%;
 }
-
-</style>
