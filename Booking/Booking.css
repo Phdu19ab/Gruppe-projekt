@@ -8,6 +8,16 @@ font-family: {
     Times New Roman, sans-serif;
 }
 
+h1 {
+    color: white;
+}
+
+p1, p2, p3 {
+    color: white;
+}
+
+
+
 #annuller {
     background-color: #0c0d0d;
     color: white;
