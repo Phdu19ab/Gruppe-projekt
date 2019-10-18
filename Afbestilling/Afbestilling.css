@@ -1,0 +1,29 @@
+
+body {
+    background-image: url("../Billeder/Afbestilling.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+{font-family: Times New Roman, sans-serif;}
+
+#behold {
+    background-color: #0c0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+#annuller {
+    background-color: #32a7fa;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

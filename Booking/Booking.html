@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <head>
     <link type="text/css" rel="stylesheet" href="Booking.css">
-    <meta charset="UTF-8">
-    <title>Booking</title>
+    <link type="text/js" rel="script" href="Booking.js">
 </head>
 
 <body>
@@ -13,6 +13,7 @@
 <form name="Booking">
 
     <p1>Antal Personer</p1>
+    <br/>
     <br/>
     <select type="text" id="Antal_Personer">
             <option selected disabled>-Antal-></option>
@@ -29,6 +30,7 @@
     <br/>
     <br/>
     <p2>Dato</p2>
+    <br/>
     <br/>
     <select type="text" id="Dato">
             <option selected disabled>-Dato-></option>
@@ -92,6 +94,7 @@
     <br/>
     <p3>Tidspunkt</p3>
     <br/>
+    <br/>
     <select type="text" id="Tidspunkt">
             <option selected disabled>-Tidspunkt-></option>
     <option value="1">10:00</option>
@@ -121,9 +124,11 @@
 
     <br/>
     <br/>
-    <button onclick="document.getElementById('id01').style.display='block'" id="bekræft" style="width:auto;">Bekræft</button>
+    <button type="button" id="bekræft" onclick="myFunction1()">Bekræft</button>
+    <br/>
+    <button type="button" id="annuller" onclick="myFunction()">Annuller</button>
 
-    <button onclick="document.getElementById('id01').style.display='block'" id="annuller" style="width:auto;">Annuller</button>
+    <script src="Booking.js"> </script>
 
 
 </form>
