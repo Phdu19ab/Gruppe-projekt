@@ -1,9 +1,11 @@
 // Email og kodeord for oprettelse af bruger
-var username = document.getElementById('e-mail');
-var password = document.getElementById('kodeord');
-var telefon = document.getElementById('tlf');
-var name = document.getElementById('navn');
-var password = document.getElementById('bekræft_kodeord');
+
+
+    var username = document.getElementById('e-mail');
+    var password = document.getElementById('kodeord');
+    var telefon = document.getElementById('tlf');
+    var nm = document.getElementById('navn');
+    var password = document.getElementById('bekræft_kodeord');
 
 
 // Store input from registration form in localStorage
@@ -11,10 +13,9 @@ function storeLogin() {
     localStorage.setItem('e-mail', username.value);
     localStorage.setItem('kodeord', password.value);
     localStorage.setItem('bekræft_kodeord', password.value);
-    localStorage.setItem('navn', name.value);
+    localStorage.setItem('navn', nm.value);
     localStorage.setItem('tlf', telefon.value);
-
-    window.open("Forside.html")
+window.open("Forside.html");
 }
 
 
@@ -30,15 +31,17 @@ function checkLogin() {
     // Stored data from the registration form
     var storedEmail = localStorage.getItem('e-mail');
     var storedPass = localStorage.getItem('kodeord');
-
+//enteredPass
     // Entered data in the login form
-    var enteredEmail = document.getElementById('enteredEmail');
-    var enteredPass = document.getElementById('enteredPass');
+    var enteredEmail = document.getElementById('e-mail');
+    var enteredPass = document.getElementById('kodeord');
 
     // Check if stored data from registration form is equal to entered data from login form
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
-        alert('You are logged in.');
+        return window.open("Opret_bruger.html")
     }else {
-        alert('Brugernavn eller kordeord er ikke korrekt.');
+        alert('Email eller kordeord er ikke korrekt.');
     }
 }
+
+
