@@ -6,25 +6,23 @@ background-image: url("Billeder/bomhuset1.jpg");
 }
 
 h1 {
-    color: black;
-    font-family: "MS PMincho";
+    font-family: Times New Roman, sans-serif;;
     text-align: center;
 }
 
 h2 {
-    color: black;
-    font-family: "MS PMincho";
+    font-family: Times New Roman, sans-serif;;
     text-align: center;
 }
 p {
     font-size: 150%;
-    font-family: Verdana;
+    font-family: Times New Roman, sans-serif;;
     margin: auto;
 }
 
 p1 {
     font-size: 200%;
-    font-family: Verdana;
+    font-family: Times New Roman, sans-serif;;
 }
 
 #tekst {
@@ -34,12 +32,25 @@ p1 {
 }
 
 #opret_bruger{
-    font-size: 100%;
+    background-color: #0c0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
 #log_ind{
-    font-size: 100%;
+    background-color: #32a7fa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
+
 #e-mail{
     font-size: 100%;
 }
