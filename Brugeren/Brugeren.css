@@ -1,0 +1,29 @@
+
+
+h1, p {
+    text-align: center;
+}
+
+
+
+
+#booking {
+    background-color: #32a7fa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+#annuller {
+    background-color: #0c0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+
+}
