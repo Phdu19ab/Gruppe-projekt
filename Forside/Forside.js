@@ -38,7 +38,7 @@ function checkLogin() {
 
     // Check if stored data from registration form is equal to entered data from login form
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
-        return window.open("Opret_bruger.html")
+        return window.open("../Brugeren/Brugeren.html")
     }else {
         alert('Email eller kordeord er ikke korrekt.');
     }
