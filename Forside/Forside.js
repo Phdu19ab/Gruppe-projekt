@@ -54,23 +54,23 @@ function check_form()
 
     if(password.length < 6 || password != password1 || !letter.test(password) || !number.test(password) || !upper.test(password)) {
         if(password.length<6){
-            alert("Please make sure password is longer than 6 characters.")
+            alert("Kodeordet skal mindst bestå af 6 tegn.")
             return false;
         }
         if(password != password1){
-            alert("Please make sure passwords match.")
+            alert("Check om begge kodeord passer overens.")
             return false;
         }
         if(!letter.test(password)){
-            alert("Please make sure password includes a lowercase letter.")
+            alert("Venligst sørg for at kodeordet indeholder et lille bogstav.")
             return false;
         }
         if(!number.test(password)){
-            alert("Please make sure Password Includes a Digit")
+            alert("Venligst sørg for at kodeordet indeholder et tal.")
             return false;
         }
         if(!upper.test(password)) {
-            alert("Please make sure password includes an uppercase letter.");
+            alert("Venligst sørg for at kodeordet indeholder et stort bogstav.");
             return false;
         }
     }
@@ -91,7 +91,7 @@ function check_form()
     var username = document.getElementById('e-mail').value;
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (!filter.test(username)) {
-        alert('Please provide a valid email address');
+        alert('Venligst indtast en eksiterende e-mail.');
         form.email.focus;
         return false;
     }
