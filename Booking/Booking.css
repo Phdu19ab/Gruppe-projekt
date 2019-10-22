@@ -1,5 +1,5 @@
 body {
-    background-image: url("../Billeder/Bomhuset2.jpg");
+    background-image: url("../Billeder/Booking-bekræft_billede.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -13,7 +13,7 @@ h1 {
     color: white;
 }
 
-p1, p2, p3 {
+p1, p2, p3, p4 {
     color: white;
 }
 
