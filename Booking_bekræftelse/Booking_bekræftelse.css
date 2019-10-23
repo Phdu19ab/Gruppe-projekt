@@ -26,6 +26,7 @@ p {
     border: none;
     cursor: pointer;
     width: 30%;
+    border-radius: 0.312rem;
 }
 #Email {
     background-color: #32a7fa;
@@ -35,6 +36,7 @@ p {
     border: none;
     cursor: pointer;
     width: 30%;
+    border-radius: 0.312rem;
 }
 #Afbestillingsside {
     background-color: #fefefe;
@@ -44,6 +46,7 @@ p {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }
 
 
@@ -55,6 +58,7 @@ p {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }
 
 

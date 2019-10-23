@@ -11,6 +11,6 @@ function myFunction2() {
 }
 
 function myFunction3() {
-    alert("Du vil nu modtage bekræftelse på din valgte enhed!")
+    alert("Du vil nu modtage bekræftelse på din valgte enhed. Vi glæder os til at se dig!")
 }
 
