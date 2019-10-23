@@ -2,7 +2,9 @@
 
     function myFunction() {
     alert("Din booking er nu annulleret, vi håber at du kommer tilbage en anden gang!")
+        window.open("../Afbestilling/Afbestilling.html");
 }
 function myFunction1() {
     alert("Din booking er nu bekræftet og vi glæder os til at se dig!")
+    window.open("../Booking_bekræftelse/Bookingbekræftelse.html");
 }
