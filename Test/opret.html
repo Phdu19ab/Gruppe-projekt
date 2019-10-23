@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+
+<head>
+    <title>CAFE BOMHUSET BORDBOOKING</title>
+    <link type="text/css" rel="stylesheet" href="Test.css">
+</head>
+<body>
+<h1>Café Bomhuset Bordbooking</h1>
+
+    <div class="box">
+        <h2>Opret bruger</h2>
+        <form>
+            <div class="inputBox">
+                <input type="email" id="e-mail" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>E-mail</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="navn" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Navn</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="tlf" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Telefonnummer</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="kodeord" required value=""
+                       onkeyup="this.setAttribute('value', this.value);"
+                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <label>Kodeord</label>
+                <div class="inputBox">
+                    <input type="password" id="bekræft_kodeord" required value=""
+                           onkeyup="this.setAttribute('value', this.value);"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <label>Bekræft Kodeord</label>
+            </div>
+            <input type="submit" id="Opret" value="Opret" onclick="check_form()">
+            </form>
+        <script src="Test.js"> </script>
+
+
+
+</body>
+</html>
