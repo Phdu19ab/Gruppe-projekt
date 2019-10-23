@@ -8,6 +8,10 @@ body {
 
 {font-family: Times New Roman, sans-serif;}
 
+h1 {
+    color: white;
+}
+
 #behold {
     background-color: #0c0d0d;
     color: white;
