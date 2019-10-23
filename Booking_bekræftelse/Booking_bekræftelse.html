@@ -3,25 +3,32 @@
 <meta charset="UTF-8">
 <head>
     <link type="text/css" rel="stylesheet" href="Booking_bekræftelse.css">
-    <link type="text/js" rel="script" href="Booking_bekræftelse.js"
+    <link type="text/js" rel="script" href="Booking_bekræftelse.js">
 </head>
 <body>
 </br>
 </br>
-
+</br>
 <h1>Booking bekræftelse</h1>
 </br>
+
+<button type="button" id="SMS" onclick="myFunction()">Bekræftelse via sms?</button>
+<form action="/action_page.php">
+    <input type="radio" name="choice" value="SMS"><br>
+</form>
 </br>
 
-<button type="button" id="SMS" onclick="myFunction()">Modtag bekræftelse via sms</button>
-</br>
-</br>
+<button type="button" id="Email" onclick="myFunction1()">Bekræftelse via email?</button>
+<form action="/action_page.php">
+    <input type="radio" name="choice" value="Email"><br>
+</form>
+</div>
 
-<button type="button" id="Email" onclick="myFunction1()">Modtag bekræftelse via email</button>
+</br>
+<button type="button" id="Bekræftelse" onclick="myFunction3()">Tryk her for at modtage bekræftelse</button>
 </br>
 </br>
-
-<button type="button" id="Afbestillingsside" onclick="myFunction2()">Du vil her komme videre til afbestillingssiden</button>
+<button type="button" id="Afbestillingsside" onclick="myFunction2()">Tryk her for at annullere din booking</button>
 
         <script src="Booking_bekræftelse.js"> </script>
 

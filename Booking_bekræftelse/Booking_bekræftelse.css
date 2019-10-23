@@ -13,14 +13,19 @@ h1 {
     color: white;
 }
 
+p {
+    color: white;
+}
+
 #SMS {
+
     background-color: #0c0d0d;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
 }
 #Email {
     background-color: #32a7fa;
@@ -29,7 +34,7 @@ h1 {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
 }
 #Afbestillingsside {
     background-color: #fefefe;
@@ -41,12 +46,15 @@ h1 {
     width: 100%;
 }
 
-#SMS2 {
-    color: black;
-}
 
-#Email2 {
-    color: black;
+#Bekræftelse {
+    background-color: #0c0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
 
