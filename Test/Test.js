@@ -36,7 +36,7 @@ function checkLogin() {
     var enteredPass = document.getElementById('kodeord');
 
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
-        return window.open("../Brugeren/Brugeren.html")
+        return window.open("../Brugeren/Brugeren.html");
     }else {
         alert('Email eller kordeord er ikke korrekt.');
     }
