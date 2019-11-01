@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
+<!--Vi sammenkobler denne html med den tilhørende css og javascript.-->
     <link type="text/css" rel="stylesheet" href="Booking.css">
     <link type="text/js" rel="script" href="Booking.js">
 </head>
@@ -13,6 +14,8 @@
 <h1>Booking
     <br/>
     Café Bomhuset</h1>
+<!--Nedenfor er de booking indsatser vi benytter for at brugeren kan indtaste de nødvendige oplysninger for bookingen-->
+- Antal personer, Dato, Year og Tidspunkt.
 <form name="Booking">
 
     <p1>Antal Personer</p1>
@@ -123,16 +126,19 @@
     </select>
     <br/>
     <br/>
+<!--Her er textarea til yderligere kommentare-->
     <p4>Yderligere kommentare<p4/>
     <br/>
     <textarea type="text" rows="5" cols="30" id="additional_info" value=""> </textarea>
 
     <br/>
     <br/>
+<!--Her er knapperne for henholdsvis - Bekræft og Annuller.-->
     <button type="button" id="bekræft" onclick="myFunction1()">Bekræft</button>
     <br/>
     <button type="button" id="annuller" onclick="myFunction()">Annuller</button>
 
+<!--Her sammenkobler vi denne html med den tilhørende javascript - så knapperne får en funktion.-->
     <script src="Booking.js"> </script>
 
 
