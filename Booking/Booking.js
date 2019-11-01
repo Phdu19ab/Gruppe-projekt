@@ -29,16 +29,19 @@ function showUser() {
 }
 
 function myFunction1() {
-    alert("Din booking er nu bekræftet og vi glæder os til at se dig/jer!"+
-      "\n Antal Personer: " + personer.options[personer.selectedIndex].value
-    + "\n Booking dato: " + kontaktdag.options[kontaktdag.selectedIndex].value+
-        "/"+kontaktmaaned.options[kontaktmaaned.selectedIndex].value+
-        "/"+kontaktaar.options[kontaktaar.selectedIndex].value+
-      "\n Tidspunkt for reservation af bord: " + tidspunkt.options[tidspunkt.selectedIndex].value +
-      "\n Booking tidspunkt: " + currentDate +
-      "\n Ydeligere kommentare til Café Bomhuset: " + info1
+    alert("Din booking er nu bekræftet og vi glæder os til at se dig/jer!" +
+        "\n Antal Personer: " + personer.options[personer.selectedIndex].value
+        + "\n Booking dato: " + kontaktdag.options[kontaktdag.selectedIndex].value +
+        "/" + kontaktmaaned.options[kontaktmaaned.selectedIndex].value +
+        "/" + kontaktaar.options[kontaktaar.selectedIndex].value +
+        "\n Tidspunkt for reservation af bord: " + tidspunkt.options[tidspunkt.selectedIndex].value +
+        "\n Booking tidspunkt: " + currentDate +
+        "\n Ydeligere kommentare til Café Bomhuset: " + info1);
+    window.open("../Booking_bekræftelse/Booking_bekræftelse.html");
+    storeLogin();
 
-    );
+}
+
 
 
 
