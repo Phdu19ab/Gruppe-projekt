@@ -38,8 +38,7 @@ function myFunction1() {
         "\n Booking tidspunkt: " + currentDate +
         "\n Ydeligere kommentare til Café Bomhuset: " + info1);
     window.open("../Booking_bekræftelse/Booking_bekræftelse.html");
-    storeLogin();
-
+      storeBooking();
 }
 
 
