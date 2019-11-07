@@ -1,4 +1,4 @@
-//Vælge dato, tidspunkt, antal personer, vælge det ønskede bord - herefter skal der kunne bekræftes og annulleres
+//Herunder er funktionen for knappen "Din booking er nu annulleret.." samt at der ved tryk på knappen åbnes et nyt linket vindue*/
 function myFunction() {
     alert("Din booking er nu annulleret, vi håber at du kommer tilbage en anden gang!")
         window.open("../Afbestilling/Afbestilling.html");

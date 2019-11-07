@@ -1,4 +1,4 @@
-//Booking oversigt, valg af booking - bekræft eller annuller
+//Herunder opstilles funktioner til de knapper vi opstillede i html
 function myFunction() {
     alert("Din booking er nu annulleret, vi håber at du kommer tilbage en anden gang!");
 }
