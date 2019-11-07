@@ -20,7 +20,7 @@ function storeLogin() {
 
 // Funktion til at se brugerne i localstorage
 function showUser() {
-    console.log('Show user stored in localStorage.')
+    console.log('Show user stored in localStorage.');
     console.log(localStorage);
 }
 

@@ -15,13 +15,13 @@
     <br/>
     Café Bomhuset</h1>
 <!--Nedenfor er de booking indsatser vi benytter for at brugeren kan indtaste de nødvendige oplysninger for bookingen-->
-- Antal personer, Dato, Year og Tidspunkt.
+<!-- Antal personer, Dato, Year og Tidspunkt. -->
 <form name="Booking">
 
     <p1>Antal Personer</p1>
     <br/>
-    <select type="text" id="Antal_Personer">
-            <option selected disabled>-Antal-></option>
+    <select  type="text" id="Antal_Personer">
+        <option disabled selected>-Antal-></option>
     <option value="1">01</option>
     <option value="2">02</option>
     <option value="3">03</option>
@@ -36,17 +36,17 @@
     <br/>
     <p2>Dato</p2>
     <br/>
-    <select type="text" id="Dato">
-            <option selected disabled>-Dato-></option>
-        <option value="1">01</option>
-        <option value="2">02</option>
-        <option value="3">03</option>
-        <option value="4">04</option>
-        <option value="5">05</option>
-        <option value="6">06</option>
-        <option value="7">07</option>
-        <option value="8">08</option>
-        <option value="9">09</option>
+    <select type="text" id="Kontaktdag">
+            <option disabled selected>-Dato-></option>
+        <option value="011">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
@@ -71,23 +71,23 @@
         <option value="31">31</option>
     </select>
 
-    <select type="text" id="Dato">
-        <option selected disabled>-Month-</option>
-    <option value="1">January</option>
-    <option value="2">February</option>
-    <option value="3">March</option>
-    <option value="4">April</option>
-    <option value="5">May</option>
-    <option value="6">June</option>
-    <option value="7">July</option>
-    <option value="8">August</option>
-    <option value="9">September</option>
+    <select type="text" id="Kontaktmåned">
+        <option disabled selected>-Month-</option>
+    <option value="01">January</option>
+    <option value="02">February</option>
+    <option value="03">March</option>
+    <option value="04">April</option>
+    <option value="05">May</option>
+    <option value="06">June</option>
+    <option value="07">July</option>
+    <option value="08">August</option>
+    <option value="09">September</option>
     <option value="10">October</option>
     <option value="11">November</option>
     <option value="12">December</option>
     </select>
 
-    <select type="text" id="Dato">
+    <select type="text" id="Kontaktår">
         <option selected disabled>-Year-</option>
         <option value="2019">2019</option>
         <option value="2020">2020</option>
@@ -99,37 +99,37 @@
     <p3>Tidspunkt</p3>
     <br/>
     <select type="text" id="Tidspunkt">
-            <option selected disabled>-Tidspunkt-></option>
-    <option value="1">10:00</option>
-    <option value="2">10:30</option>
-    <option value="3">11:00</option>
-    <option value="4">11:30</option>
-    <option value="5">12:00</option>
-    <option value="6">12:30</option>
-    <option value="7">13:00</option>
-    <option value="8">13:30</option>
-    <option value="9">14:00</option>
-    <option value="10">14:30</option>
-    <option value="11">15:00</option>
-    <option value="12">15:30</option>
-    <option value="13">16:00</option>
-    <option value="14">16:30</option>
-    <option value="15">17:00</option>
-    <option value="16">17:30</option>
-    <option value="17">18:00</option>
-    <option value="18">18:30</option>
-    <option value="19">19:00</option>
-    <option value="20">19:30</option>
-    <option value="21">20:00</option>
-    <option value="22">20:30</option>
-    <option value="23">21:00</option>
+            <option disabled selected>-Tidspunkt-></option>
+    <option value="10:00">10:00</option>
+    <option value="10:30">10:30</option>
+    <option value="11:00">11:00</option>
+    <option value="11:30">11:30</option>
+    <option value="12:00">12:00</option>
+    <option value="12:30">12:30</option>
+    <option value="13:00">13:00</option>
+    <option value="13:30">13:30</option>
+    <option value="14:00">14:00</option>
+    <option value="14:30">14:30</option>
+    <option value="15:00">15:00</option>
+    <option value="15:30">15:30</option>
+    <option value="16:00">16:00</option>
+    <option value="16:30">16:30</option>
+    <option value="17:00">17:00</option>
+    <option value="17:30">17:30</option>
+    <option value="18:00">18:00</option>
+    <option value="18:30">18:30</option>
+    <option value="19:00">19:00</option>
+    <option value="19:30">19:30</option>
+    <option value="20:00">20:00</option>
+    <option value="20:30">20:30</option>
+    <option value="21:00">21:00</option>
     </select>
     <br/>
     <br/>
 <!--Her er textarea til yderligere kommentare-->
     <p4>Yderligere kommentare<p4/>
     <br/>
-    <textarea type="text" rows="5" cols="30" id="additional_info" value=""> </textarea>
+    <textarea type="text" rows="5" cols="30" id="additional_info" value="" > </textarea>
 
     <br/>
     <br/>
@@ -139,7 +139,7 @@
     <button type="button" id="annuller" onclick="myFunction()">Annuller</button>
 
 <!--Her sammenkobler vi denne html med den tilhørende javascript - så knapperne får en funktion.-->
-    <script src="Booking.js"> </script>
+    <script src="Booking.js"></script>
 
 
 </form>
