@@ -44,6 +44,7 @@ function myFunction1() {
         alert("Din Booking er nu annuleret");
         window.location.href = "../Booking/Booking.html";
     }
+
 }
 
 
