@@ -1,8 +1,9 @@
+/* teksten placerer vi i midten*/
 body {
     text-align: center;
 }
 
-
+/*Herunder opstiller vi design for vores knapper - forrige bookinger, dagens bookinger og fremtidige bookinger*/
 #forrige_bookinger {
     background-color: #0c0d0d;
     color: white;
@@ -11,6 +12,7 @@ body {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }
 
 #dagens_bookinger {
@@ -21,6 +23,7 @@ body {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }
 
 #fremtidige_bookinger {
@@ -31,4 +34,5 @@ body {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }

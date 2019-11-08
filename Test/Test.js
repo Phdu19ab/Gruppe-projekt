@@ -20,7 +20,7 @@ function storeLogin() {
 
 // Funktion til at se brugerne i localstorage
 function showUser() {
-    console.log('Show user stored in localStorage.')
+    console.log('Show user stored in localStorage.');
     console.log(localStorage);
 }
 
@@ -54,19 +54,19 @@ function check_form()
 
     if(password.length < 6 || password != password1 || !letter.test(password) || !number.test(password) || !upper.test(password)) {
         if(password.length<6){
-            alert("Kodeordet skal mindst bestå af 6 tegn.")
+            alert("Kodeordet skal mindst bestå af 6 tegn.");
             return false;
         }
         if(password != password1){
-            alert("Check om begge kodeord passer overens.")
+            alert("Check om begge kodeord passer overens.");
             return false;
         }
         if(!letter.test(password)){
-            alert("Venligst sørg for at kodeordet indeholder et lille bogstav.")
+            alert("Venligst sørg for at kodeordet indeholder et lille bogstav.");
             return false;
         }
         if(!number.test(password)){
-            alert("Venligst sørg for at kodeordet indeholder et tal.")
+            alert("Venligst sørg for at kodeordet indeholder et tal.");
             return false;
         }
         if(!upper.test(password)) {
@@ -77,11 +77,11 @@ function check_form()
 // If statement til at gøre så telefonnummeret kun er med tal samt at det skal indholde 8 tal.
     var telefon = document.getElementById('tlf').value;
         if (isNaN(telefon)) {
-            alert("Venligst skriv dit nummer med tal")
+            alert("Venligst skriv dit nummer med tal");
             return false;
         }
             if (telefon.length < 8) {
-                alert("Telefon nummeret skal indholde 8 tal")
+                alert("Telefon nummeret skal indholde 8 tal");
                 return false;
             }
 

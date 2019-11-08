@@ -1,3 +1,4 @@
+/*Teksten placere i midten, og vi indsætter et valgt billede som baggrund*/
 body {
     background-image: url("../Billeder/Booking-bekræft_billede.jpg");
     background-size: cover;
@@ -5,13 +6,13 @@ body {
 
     text-align: center;
 }
-
+/*Vi indstiller skrifttypen*/
 {font-family: Times New Roman, sans-serif;}
 
 h1 {
     color: white;
 }
-
+/*Herunder opstilles design for vores knapper - Behold, Annuller.*/
 #behold {
     background-color: #32a7fa;
     color: white;
@@ -20,6 +21,7 @@ h1 {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 
 }
 #annuller {
@@ -30,4 +32,5 @@ h1 {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 0.312rem;
 }
