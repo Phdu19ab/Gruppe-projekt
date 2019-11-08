@@ -68,7 +68,7 @@ body {
     font-size: 0.75rem;
 }
 
-.box input[type="submit"] {
+.box input[type="button"] {
     width: 100%;
     border: none;
     outline: none;
@@ -80,6 +80,6 @@ body {
     font-size: 1rem;
 }
 
-.box input[type="submit"]:hover {
+.box input[type="button"]:hover {
     background-color: #1cb1f5;
 }

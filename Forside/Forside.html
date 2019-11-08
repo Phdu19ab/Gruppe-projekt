@@ -12,19 +12,19 @@
     <form>
         <div class="inputBox">
             <input type="email" id="e-mail" required onkeyup="this.setAttribute('value', this.value);" value="">
-            <label>Username</label>
+            <label>E-mail</label>
         </div>
         <div class="inputBox">
             <input type="password" id="kodeord" required value=""
                    onkeyup="this.setAttribute('value', this.value);"
                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-            <label>Password</label>
+            <label>Kodeord</label>
         </div>
-        <input type="submit" id="sign-in" value="Log ind" onclick="checkLogin()">
+        <input type="button" id="sign-in" value="Log ind" onclick="checkLogin()">
 <br/>
 <br/>
-        <input type="submit" id="opret_dig" Value="Opret dig her" onclick="window.location.href = 'opret.html';">
+        <input type="button" id="opret_dig" Value="Opret dig her" onclick="window.location.href = 'opret.html';">
     </form>
         <script src="Forside.js"> </script>
 </div>
