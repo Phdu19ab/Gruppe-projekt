@@ -1,4 +1,4 @@
-//Login, kunne se oversigt over bookinger, kunne redigere, slette og oprette bookinger
+//Herunder er funktioner for de tre opstilte knapper i html
 function myFunction() {
     alert("Du vil her kunne se forrige bookinger!")
 }
