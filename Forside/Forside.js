@@ -36,7 +36,7 @@ function checkLogin() {
     var enteredPass = document.getElementById('kodeord');
 
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
-        return window.open("../Brugeren/Brugeren.html");
+        return window.location.href = "../Brugeren/Brugeren.html";
     }else {
         alert('Email eller kordeord er ikke korrekt.');
     }
@@ -99,7 +99,7 @@ function check_form()
 else
     alert("Brugeren er nu oprettet");
 storeLogin();
-    window.open("Forside.html");
+    window.location.href = "../Brugeren/Brugeren.html";
     return true;
 }
 
