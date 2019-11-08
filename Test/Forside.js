@@ -99,7 +99,7 @@ function check_form()
 else
     alert("Brugeren er nu oprettet");
 storeLogin();
-    window.open("Test.html");
+    window.open("Forside.html");
     return true;
 }
 
