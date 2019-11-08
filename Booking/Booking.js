@@ -1,7 +1,7 @@
 //Herunder er funktionen for knappen "Din booking er nu annulleret.." samt at der ved tryk på knappen åbnes et nyt linket vindue*/
 function myFunction() {
     alert("Din booking er nu annulleret, vi håber at du kommer tilbage en anden gang!");
-        window.open("../Afbestilling/Afbestilling.html");
+        window.location.href = "../Afbestilling/Afbestilling.html";
 }
 
  var personer = document.getElementById('Antal_Personer');
@@ -37,12 +37,12 @@ function myFunction1() {
         "\n Tidspunkt for reservation af bord: " + tidspunkt.options[tidspunkt.selectedIndex].value +
         "\n Booking tidspunkt: " + currentDate +
         "\n Ydeligere kommentare til Café Bomhuset: " + info1.value);
-    if (isConfirmed) {alert('Din Booking er nu bekræftet')
-        window.open("../Booking_bekræftelse/Booking_bekræftelse.html");
+    if (isConfirmed) {alert('Din Booking er nu bekræftet');
+        window.location.href = "../Booking_bekræftelse/Booking_bekræftelse.html";
     storeBooking();
     } else {
-        alert("Din Booking er nu annuleret")
-        window.open("Booking.html");
+        alert("Din Booking er nu annuleret");
+        window.location.href = "../Booking/Booking.html";
     }
 }
 
