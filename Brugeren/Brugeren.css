@@ -1,6 +1,4 @@
-
-
-h1, p {
+h1, h2, p {
     text-align: center;
 }
 
@@ -15,7 +13,7 @@ h1, p {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 40%;
+    width: 100%;
     border-radius: 0.312rem;
 }
 
@@ -26,7 +24,7 @@ h1, p {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 40%;
+    width: 100%;
     border-radius: 0.312rem;
 
 }
