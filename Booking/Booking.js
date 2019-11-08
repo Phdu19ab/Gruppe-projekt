@@ -11,16 +11,20 @@ function myFunction() {
  var kontaktmaaned = document.getElementById('Kontaktmåned');
  var kontaktaar = document.getElementById('Kontaktår');
 
-
  var currentDate = new Date();
 
+ // Creates and stores a new booking
  function storeBooking() {
-     localStorage.setItem('Antal_Personer', personer.value);
-     localStorage.setItem('Tidspunkt', tidspunkt.value);
-     localStorage.setItem('additional_info', info1.value);
-     localStorage.setItem('Kontaktdag', kontaktdag.value);
-     localStorage.setItem('Kontaktmåned', kontaktmaaned.value);
-     localStorage.setItem('Kontaktår', kontaktaar.value);
+     let a_booking = newBooking(
+         personer.value,
+         tidspunkt.value,
+         info1.value,
+         kontaktdag.value,
+         kontaktmaaned.value,
+         kontaktaar.value,
+         localStorage.getItem('e-mail')
+         );
+     appendBooking(a_booking);
  }
 
 function showUser() {
@@ -29,6 +33,7 @@ function showUser() {
 }
 
 function myFunction1() {
+     storeBooking();
     var isConfirmed=confirm("\n Din booking er nu bekræftet og vi glæder os til at se dig/jer!" +
         "\n Antal Personer: " + personer.options[personer.selectedIndex].value
         + "\n Booking dato: " + kontaktdag.options[kontaktdag.selectedIndex].value +

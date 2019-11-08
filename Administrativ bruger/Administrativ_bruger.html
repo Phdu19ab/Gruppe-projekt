@@ -2,6 +2,8 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
+<!--    Bootstrap (flot css for tabellen)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--I headeren linker vi dokumentet til det tilhørende css og javascript dokument.-->
     <link type="text/css" rel="stylesheet" href="Administrativ_bruger.css">
     <link type="text/js" rel="script" href="Administrativ_bruger.js">
@@ -12,18 +14,30 @@
     Café Bomhuset</h1>
 </br>
 </br>
-<!--Herunder er knapper til henholdsvis Forrige bookinger, Dagens bookinger og Fremtidige bookinger.-->
-<button type="button" id="forrige_bookinger" onclick="myFunction()">Forrige bookinger</button>
-</br>
-</br>
-<button type="button" id="dagens_bookinger" onclick="myFunction1()">Dagens bookinger</button>
-</br>
-</br>
-<button type="button" id="fremtidige_bookinger" onclick="myFunction2()">Fremtidige bookinger</button>
+<h2>Fremtidige bookinger</h2>
+
+<!--Skabelon for tabel-->
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Antal personer</th>
+        <th scope="col">Tid</th>
+        <th scope="col"></th>
+        <th scope="col">Dag</th>
+        <th scope="col">Måned</th>
+        <th scope="col">Årstal</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody id="future_bookings">
+    </tbody>
+</table>
 
 <!--Her refereres denne html til det tilhørende javascript dokument "Administrativ_bruger" -
 så knapperne får en funktion.-->
 <script src="Administrativ_bruger.js"> </script>
+
+<script src="../library/bookings.js"> </script>
 
 
 </body>

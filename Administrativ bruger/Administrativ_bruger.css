@@ -4,35 +4,3 @@ body {
 }
 
 /*Herunder opstiller vi design for vores knapper - forrige bookinger, dagens bookinger og fremtidige bookinger*/
-#forrige_bookinger {
-    background-color: #0c0d0d;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 0.312rem;
-}
-
-#dagens_bookinger {
-    background-color: #0c0d0d;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 0.312rem;
-}
-
-#fremtidige_bookinger {
-    background-color: #0c0d0d;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 0.312rem;
-}

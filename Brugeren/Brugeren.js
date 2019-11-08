@@ -7,3 +7,11 @@ function myFunction1() {
     alert("Du vil nu blive henvist til siden hvor du kan annullere bookinger!");
     window.location.href = "../Afbestilling/Afbestilling.html";
 }
+
+// Når dokumentet indlæser vises booking i html tabellen
+window.addEventListener('load', function () {
+    displayBookings(
+        'my_bookings',
+        'Du har ingen bookings',
+        false);
+});
