@@ -1,0 +1,38 @@
+<head>
+    <style>
+        .room {
+            border: 1px solid black;
+            height: 430px;
+            width: 430px;
+        }
+        .tablebook {
+            border: 1px solid black;
+            height: 138px;
+            width: 138px;
+            display: inline-block;
+        }
+        .tablebooked {
+            border-color:red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="room">
+    <div class="tablebook" id="table1" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table2" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table3" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table4" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table5" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table6" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table7" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table8" onclick="booktable(this.id)"></div>
+    <div class="tablebook" id="table9" onclick="booktable(this.id)"></div>
+</div>
+</body>
+
+<script>
+    function booktable(id){
+        document.getElementById(id).classList.add("tablebooked");
+    }
+</script>
