@@ -1,6 +1,4 @@
-// Email og kodeord for oprettelse af bruger
-
-
+// Email og kodeord, telefonnummer, navn og bekræft kodeord for oprettelse af bruger.
     var username = document.getElementById('e-mail');
     var password = document.getElementById('kodeord');
     var telefon = document.getElementById('tlf');
@@ -8,7 +6,7 @@
     var password = document.getElementById('bekræft_kodeord');
 
 
-// Gemmer data fra registreringsformen til localstorage
+// Denne funktion gemmer dataen fra registreringsformen i localstorage.
 function storeLogin() {
     localStorage.setItem('e-mail', username.value);
     localStorage.setItem('kodeord', password.value);
@@ -18,30 +16,34 @@ function storeLogin() {
 }
 
 
-// Funktion til at se brugerne i localstorage
+// Denne funktion viser brugeren i localstorage.
 function showUser() {
     console.log('Show user stored in localStorage.');
     console.log(localStorage);
 }
 
-// Checker om den gemte data fra formen er lig med det brugeren indtaster i login formen.
+// Denne funktion checker om den gemte data fra formen er lig med det brugeren indtaster i login formen.
 function checkLogin() {
 
-    // gemt data fra registreringsformen
+    // Gemt data fra registreringsformen
     var storedEmail = localStorage.getItem('e-mail');
     var storedPass = localStorage.getItem('kodeord');
 
-    // indtastet data i login formen
+    // Indtastet data i login formen
     var enteredEmail = document.getElementById('e-mail');
     var enteredPass = document.getElementById('kodeord');
 
+    //Her opstiller vi et "if-else statement" dette udgør at hvis den indtastede email og kodeord er de samme som de gemte
+    //så returneres der via henvisningen to linjer nede til brugerens profil. Hvis ikke de genkendes som de sammen
+    //så vil den udskrive "Email eller kodeord er ikke korrekt."
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
         return window.location.href = '../Brugeren/Brugeren.html';
     }else {
         alert('Email eller kordeord er ikke korrekt.');
     }
 }
-// Funktion til specikke oprettelseskrav ved oprettelse af en ny bruger
+// Denne funktion tjekker om det indtastede kodeord imødekommer de oprettelseskrav vi opstiller i form af at det skal indeholde
+//små bogstaver, store bogstaver og tal.
 // If statements til kravene der er stillet.
 function check_form()
 {
@@ -51,7 +53,9 @@ function check_form()
     var upper  =/[A-Z]/;
     var number = /[0-9]/;
 
-
+    //Disse if statements opstiller følgende krav - kodeord skal være længere end 6 tegn, kodeord og bekræftet kodeord skal
+    //stemme overens, kodeord skal indeholde et lille bogstav, et tal og et stort bogstav.
+    //Hvis ikke disse ting er gældende vil den "return false."
     if(password.length < 6 || password != password1 || !letter.test(password) || !number.test(password) || !upper.test(password)) {
         if(password.length<6){
             alert("Kodeordet skal mindst bestå af 6 tegn.");
@@ -74,7 +78,8 @@ function check_form()
             return false;
         }
     }
-// If statement til at gøre så telefonnummeret kun er med tal samt at det skal indholde 8 tal.
+    // Dette "if-statement" sørger for at det telefonummer der indtastes kun består af tal - og herunder mindst 8 tal.
+    //Hvis ikke det er gældende vil den "return false."
     var telefon = document.getElementById('tlf').value;
         if (isNaN(telefon)) {
             alert("Venligst skriv dit nummer med tal");
@@ -85,9 +90,9 @@ function check_form()
                 return false;
             }
 
-            // Test email for at det skal indholde @ samt punktum
-    // brugeren bliver nu oprettet samt dataen til login bliver stored i localstorage
-    // derefter bliver brugeren directed tilbage til log ind siden hvis alt information er korrekt indtastet.
+            //Denne funktion tester email - for at sikrer det indholder "@" samt "."
+    //Brugeren bliver nu oprettet samt dataen til login bliver stored i localstorage.
+    //Hvis alt information er korrekt indtastet korrekt vil brugeren herefter blive henvist tilbage til log-ind siden.
     var username = document.getElementById('e-mail').value;
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (!filter.test(username)) {

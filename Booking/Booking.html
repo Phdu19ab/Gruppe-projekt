@@ -14,8 +14,9 @@
 <h1>Booking
     <br/>
     Café Bomhuset</h1>
-<!--Nedenfor er de booking indsatser vi benytter for at brugeren kan indtaste de nødvendige oplysninger for bookingen-->
-<!-- Antal personer, Dato, Year og Tidspunkt. -->
+<!--Nedenfor er de booking indsatser vi benytter for at brugeren kan indtaste de nødvendige oplysninger for bookingen
+Vi indsætter indsatserne med dens value i en option.-->
+<!-- Antal personer, Dato, År, Tidspunkt og Yderligere kommentare -->
 <form name="Booking">
 
     <p1>Antal Personer</p1>
@@ -73,18 +74,18 @@
 
     <select type="text" id="Kontaktmåned">
         <option disabled selected>-Month-</option>
-    <option value="01">January</option>
-    <option value="02">February</option>
-    <option value="03">March</option>
-    <option value="04">April</option>
-    <option value="05">May</option>
-    <option value="06">June</option>
-    <option value="07">July</option>
-    <option value="08">August</option>
-    <option value="09">September</option>
-    <option value="10">October</option>
-    <option value="11">November</option>
-    <option value="12">December</option>
+    <option value="Januar">January</option>
+    <option value="Februar">February</option>
+    <option value="Marts">March</option>
+    <option value="April">April</option>
+    <option value="Maj">May</option>
+    <option value="Juni">June</option>
+    <option value="Juli">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="Oktober">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
     </select>
 
     <select type="text" id="Kontaktår">
@@ -126,14 +127,14 @@
     </select>
     <br/>
     <br/>
-<!--Her er textarea til yderligere kommentare-->
+<!--Her det textarea der hæfter sig til de yderligere kommentare-->
     <p4>Yderligere kommentare<p4/>
     <br/>
     <textarea type="text" rows="5" cols="30" id="additional_info" > </textarea>
 
     <br/>
     <br/>
-<!--Her er knapperne for henholdsvis - Bekræft og Annuller.-->
+<!--Her er knapperne for henholdsvis - Bekræft og Annuller. Disse knappers "design" findes i den tilhørende css-fil.-->
     <button type="button" id="bekræft" onclick="myFunction1()">Bekræft</button>
     <br/>
 
