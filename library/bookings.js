@@ -1,4 +1,4 @@
-// Create a new booking object. Standerized structure.
+// Laver en ny booking - standard struktur.
 function newBooking(people_count, time, add_info, day, month, year, email) {
     return {
         "people_count":  people_count,
@@ -12,34 +12,34 @@ function newBooking(people_count, time, add_info, day, month, year, email) {
 }
 
 function appendBooking(a_booking) {
-    // Get current bookings array from localstorage
+    // Henter den aktuelle booking array fra localstorage.
     let currentBookings = localStorage.getItem('bookings');
     // If null, create empty array. (Inside string, because it gets parsed)
     if (currentBookings === null) {
         currentBookings = '[]';
     }
-    // Parsing booking array to data structure
+    // Sender booking array til data strukturen.
     let currentBookingArray = JSON.parse(currentBookings);
-    // Append / Push new booking into current bookings array
+    // Pusher den nye booking til det aktuelle booking array.
     currentBookingArray.push(a_booking);
-    // Store modified array into localstorage
+    // Gemmer det modificerede array i localstorage.
     localStorage.setItem('bookings',JSON.stringify(currentBookingArray));
     return currentBookingArray;
 }
 
 function appendBookingRow(booking, table_id, is_administrator) {
-    // Get table element
+    // Henter "table element"
     let table = document.getElementById(table_id);
-    // Insert a row called row
+    // Indsætter en row kaldt row
     let row = table.insertRow();
 
-    // For each key (like 'email' or 'people_count' in the booking to be added do:
+    // For hver key såsom ("email eller people_count) i bookingen der skal tilføjes gør:
     for (let key in booking) {
 
-        // If the key is email, and you're an admin insert
+        // Hvis key er email, og du er admin indsæt.
         if (key === 'email' && is_administrator) {
             row.insertCell().innerText = booking[key];
-        // Else if you're not an admin and the key is email or the key is not email do:
+        // Ellers hvis du ikke er admin og key er email eller ikke email gør:
         } else if (key !== 'email'){
             row.insertCell().innerText = booking[key];
         }
@@ -48,63 +48,63 @@ function appendBookingRow(booking, table_id, is_administrator) {
 }
 
 function displayEmptyBookings(table_id, message) {
-    // Get the table
+    // Henter table.
     var table = document.getElementById(table_id);
-    // Insert row into the table
+    // Indsæt row/række ind i table.
     var row = table.insertRow();
-    // Create new cell in the row in the table
+    // Lav en ny celle i row/række og i table.
     var cell1 = row.insertCell();
 
-    // Set text in the row
+    // Put tekst in i row/rækken.
     cell1.innerText = message;
 }
 
 function getBookings(email, is_administrator) {
-    // fetch bookings from localstorage
+    // Hent booking fra localstorage.
     let all_bookings = localStorage.getItem('bookings');
 
-    // If null, create empty array
+    // Hvis nul, lav tomt array.
     if (all_bookings === null) {
         all_bookings = '[]';
     }
-    // Parse the json string to data structure
+    // Send json string til data strukturen.
     let all_bookings_array = JSON.parse(all_bookings);
 
-    // if admin just return all bookings
+    // Hvis admin bare return alle bookings.
     if (is_administrator) {
         return all_bookings_array;
     }
 
-    // Empty array to populate with users bookings
+    // Tomt array to populate with users bookings
     let this_emails_bookings = [];
 
-    // For each booking in all bookings do:
+    // For hver booking i alle bookinger gør:
     for (let i = 0; i < all_bookings_array.length; i++) {
-        // If bookings email matches users email, add to users bookings array
+        // Hvis bookingens email matcher brugerens email, tilføj til brugerens booking array.
         if (all_bookings_array[i].email === email) {
             this_emails_bookings.push(all_bookings_array[i]);
         }
     }
 
-    // Return users bookings
+    // Return brugerens bookinger.
     return this_emails_bookings;
 
 }
 
 
 function displayBookings(table_id, empty_message, is_administrator) {
-    // Get the bookings for the logged in user, or all for the admin
+    // Hent bookingerne fra den bruger der er logget ind, eller alt fra admin.
     let bookings = getBookings(
         localStorage.getItem('e-mail'),
         is_administrator);
 
-    // If empty, display that it is empty
+    // Hvis tom, display/vis at det er tomt.
     if (bookings.length === 0) {
         displayEmptyBookings(table_id, empty_message);
         return;
     }
 
-    // For each booking, add a row with info
+    // For hver booking, tilføj en row/række med information. 
     for (let i = 0; i < bookings.length; i++) {
         appendBookingRow(bookings[i], table_id, is_administrator);
     }
