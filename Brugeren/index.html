@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <!--Skabelon for tabel til bookings-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Vi sammenkobler denne html med den tilhørende css og javascript.-->
+    <link type="text/css" rel="stylesheet" href="Brugeren.css">
+    <link type="text/js" rel="script" href="Brugeren.js">
+    <title>Din bruger</title>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Café Bomhuset</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="menu">
+
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item text-muted" id="user-email">
+
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Din brugerprofil</h1>
+        <p> Du vil på denne side kunne se din bookinghistorik.</p>
+        <br>
+
+        <!--Skabelon for tabel til bookings-->
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Antal personer</th>
+                <th scope="col">Tid</th>
+                <th scope="col"></th>
+                <th scope="col">Dag</th>
+                <th scope="col">Måned</th>
+                <th scope="col">Årstal</th>
+            </tr>
+            </thead>
+            <tbody id="my_bookings">
+            </tbody>
+        </table>
+
+        <p>Denne side vil tilmed give dig adgang til annullering af bookinger, samt det at kunne foretage nye bookinger.</p>
+        <br>
+        <!--Herunder er knapperne for henholdsvis - Foretag en ny booking og Annuller en booking-->
+        <br>
+        <button type="button" id="booking" onclick="myFunction()">Foretag en ny booking</button>
+        <br>
+        <br>
+        <button type="button" id="annuller" onclick="myFunction1()">Annuller en booking</button>
+
+    </div>
+
+</div>
+<!--Her sammenkobles denne html med det tilhørende javascript - så knapperne får en funktion.-->
+<script src="Brugeren.js"> </script>
+
+<script src="../library/bookings.js"> </script>
+<script src="../library/menu.js"> </script>
+
+
+</body>
+</html>

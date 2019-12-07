@@ -37,7 +37,7 @@ function checkLogin() {
     //så returneres der via henvisningen to linjer nede til brugerens profil. Hvis ikke de genkendes som de sammen
     //så vil den udskrive "Email eller kodeord er ikke korrekt."
     if(enteredEmail.value == storedEmail && enteredPass.value == storedPass) {
-        return window.location.href = '../Brugeren/Brugeren.html';
+        return window.location.href = '../Brugeren/index.html';
     }else {
         alert('Email eller kordeord er ikke korrekt.');
     }
@@ -104,7 +104,7 @@ function check_form()
 else
     alert("Brugeren er nu oprettet");
 storeLogin();
-    window.location.href = 'Forside.html';
+    window.location.href = 'index.html';
     return true;
 }
 

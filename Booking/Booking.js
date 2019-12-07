@@ -48,7 +48,7 @@ function myFunction1() {
     storeBooking();
     } else {
         alert("Din Booking er nu annuleret");
-        window.location.href = "../Booking/Booking.html";
+        window.location.href = "index.html";
     }
 
 }

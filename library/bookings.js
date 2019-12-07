@@ -1,6 +1,8 @@
 // Laver en ny booking - standard struktur.
 function newBooking(people_count, time, add_info, day, month, year, email) {
     return {
+        //TODO: Konverter til int
+        "id": Math.random() * 10000,
         "people_count":  people_count,
         "time": time,
         "add_info": add_info,
@@ -14,7 +16,7 @@ function newBooking(people_count, time, add_info, day, month, year, email) {
 function appendBooking(a_booking) {
     // Henter den aktuelle booking array fra localstorage.
     let currentBookings = localStorage.getItem('bookings');
-    // If null, create empty array. (Inside string, because it gets parsed)
+    // Hvis der ikke er noget at hente, lav en tom array. (Inside string, because it gets parsed)
     if (currentBookings === null) {
         currentBookings = '[]';
     }
@@ -30,8 +32,11 @@ function appendBooking(a_booking) {
 function appendBookingRow(booking, table_id, is_administrator) {
     // Henter "table element"
     let table = document.getElementById(table_id);
-    // Indsætter en row kaldt row
+    // Indsætter en række kaldt row
     let row = table.insertRow();
+
+    // Sætter variablerne id og email
+    let dontShow = ['id','email'];
 
     // For hver key såsom ("email eller people_count) i bookingen der skal tilføjes gør:
     for (let key in booking) {
@@ -39,12 +44,50 @@ function appendBookingRow(booking, table_id, is_administrator) {
         // Hvis key er email, og du er admin indsæt.
         if (key === 'email' && is_administrator) {
             row.insertCell().innerText = booking[key];
-        // Ellers hvis du ikke er admin og key er email eller ikke email gør:
-        } else if (key !== 'email'){
+            // Ellers, hvis key ikke findes som dontShow variabel, vises de i tabellen
+        } else if (!dontShow.includes(key)){
             row.insertCell().innerText = booking[key];
         }
 
     }
+
+    // Lav delete knap
+    let button = document.createElement('button');
+    button.innerHTML = 'Slet booking';
+    button.onclick = function(){
+        deleteBooking(booking.id);
+
+    };
+
+    row.insertCell().appendChild(button);
+
+}
+
+function deleteBooking(id) {
+    // Hent booking fra localstorage.
+    let all_bookings = localStorage.getItem('bookings');
+
+    // Hvis nul, lav tomt array.
+    if (all_bookings === null) {
+        all_bookings = '[]';
+    }
+    // Send json string til data strukturen.
+    let all_bookings_array = JSON.parse(all_bookings);
+
+    let booking_array_with_removed_booking = [];
+
+    all_bookings_array.forEach(function(booking) {
+        if (id == booking.id) {
+            alert("Slettet din booking");
+        } else {
+            booking_array_with_removed_booking.push(booking);
+        }
+    });
+
+    // Gemmer det modificerede array i localstorage.
+    localStorage.setItem('bookings',JSON.stringify(booking_array_with_removed_booking));
+
+
 }
 
 function displayEmptyBookings(table_id, message) {
@@ -75,7 +118,7 @@ function getBookings(email, is_administrator) {
         return all_bookings_array;
     }
 
-    // Tomt array to populate with users bookings
+    // Tomt array for at fylde med brugerens bookings
     let this_emails_bookings = [];
 
     // For hver booking i alle bookinger gør:
