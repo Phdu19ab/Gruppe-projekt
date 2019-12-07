@@ -1,6 +1,4 @@
 // Email og kodeord for oprettelse af bruger
-
-
     var username = document.getElementById('e-mail');
     var password = document.getElementById('kodeord');
     var telefon = document.getElementById('tlf');
