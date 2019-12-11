@@ -1,7 +1,6 @@
 // Laver en ny booking - standard struktur.
 function newBooking(people_count, time, add_info, day, month, year, email) {
     return {
-        //TODO: Konverter til int
         "id": Math.random() * 10000,
         "people_count":  people_count,
         "time": time,

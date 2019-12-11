@@ -1,8 +1,3 @@
-//Herunder er funktionen for knappen "Din booking er nu annulleret.." samt at der ved tryk på knappen åbnes et nyt linket vindue
-function myFunction() {
-    alert("Din booking er nu annulleret, vi håber at du kommer tilbage en anden gang!");
-        window.location.href = "../Afbestilling/Afbestilling.html";
-}
 //Herunder henter vi oplysningerne fra vores tilhørende html
 // til henholdsvis "antal personer, tidspunkt, yderligere kommentare, kontaktdag, kontaktmåned og kontaktår."
  var personer = document.getElementById('Antal_Personer');

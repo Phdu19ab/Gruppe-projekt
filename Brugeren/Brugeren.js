@@ -3,10 +3,6 @@ function myFunction() {
     alert("Du vil nu blive henvist til siden hvor du kan foretage en ny booking!");
     window.location.href = "../Booking/index.html";
 }
-function myFunction1() {
-    alert("Du vil nu blive henvist til siden hvor du kan annullere bookinger!");
-    window.location.href = "../Afbestilling/Afbestilling.html";
-}
 
 // Når dokumentet indlæser vises booking i html tabellen
 window.addEventListener('load', function () {
