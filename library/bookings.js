@@ -146,7 +146,7 @@ function displayBookings(table_id, empty_message, is_administrator) {
         return;
     }
 
-    // For hver booking, tilføj en row/række med information. 
+    // For hver booking, tilføj en row/række med information.
     for (let i = 0; i < bookings.length; i++) {
         appendBookingRow(bookings[i], table_id, is_administrator);
     }

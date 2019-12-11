@@ -27,7 +27,7 @@ function showUser() {
     console.log('Show user stored in localStorage.');
     console.log(localStorage);
 }
-//Dene funktion gemmer den indtastede booking - og henviser nederst hvis bookingen bekræftes til Booking_bekræftelse.
+//Denne funktion gemmer den indtastede booking - og henviser nederst hvis bookingen bekræftes til Booking_bekræftelse.
 function myFunction1() {
      storeBooking();
     var isConfirmed=confirm("\n Din booking er nu bekræftet og vi glæder os til at se dig/jer!" +

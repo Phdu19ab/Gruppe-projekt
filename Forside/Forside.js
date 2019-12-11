@@ -15,7 +15,6 @@ function storeLogin() {
     localStorage.setItem('tlf', telefon.value);
 }
 
-
 // Denne funktion viser brugeren i localstorage.
 function showUser() {
     console.log('Show user stored in localStorage.');
